@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body {
+	background-color: #FBFBFB;
+	font-family: Helvetica;
+	color: #828282;
+}
+
+body * {
+	margin: auto;
+	padding-top: 40vh; 
+	padding-bottom: 15vh;
+	font-weight: 700;
+	font-size: 300%;
+	max-width: 90%;
+}
