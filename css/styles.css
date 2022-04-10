@@ -1,13 +1,70 @@
 @charset "UTF-8";
 
+:root {
+  --accent: #80ACFF;
+}
+
 body {
+	display: grid;
 	background-color: #FBFBFB;
 	font-family: Helvetica;
-	color: #828282;
+	grid-template-rows: auto auto;
 }
 
 body * {
 	margin: auto;
+	justify-self:  center;
+}
+
+a{color: --accent;}
+
+button {
+	box-sizing: border-box;
+	min-width: 140px; height: 45px;
+	margin-bottom: 2vh; 
+	font-size: 0.9em;
+	border-radius: 10px;
+	border: none;
+	background-color: var(--accent);
+	color: black;
+	outline: none;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	font-weight: 500;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+	line-height: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	vertical-align: middle;
+}
+
+button.outlined {
+	border:solid;
+	border-width: 2px;
+	background-color: transparent;
+	color: var(--accent);
+	border-color: var(--accent);
+	outline: none;
+	box-shadow: none;
+}
+
+button.outlined.red {color: #E57373; border-color: #E57373;}
+
+button:hover {
+	box-shadow: 0 3px 12px rgba(128,172,255,0.5);
+}
+
+
+button.outlined:hover {
+	color: black;
+	background-color: var(--accent);
+}
+
+button.outlined.red:hover {
+	color: black;
+	background-color: #E57373;
+}
+
+main {
 	padding-top: 40vh; 
 	padding-bottom: 15vh;
 	font-weight: 700;
