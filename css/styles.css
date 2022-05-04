@@ -1,32 +1,55 @@
 @charset "UTF-8";
 
-:root {
-  --accent: #80ACFF;
+@media (prefers-color-scheme: dark) {
+	:root {
+	  --text: white;
+	  --text-inv: black;
+	  --bg: #24272A;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+	  --text: black;
+	  --text-inv: white;
+	  --bg: white;
+	}
 }
 
 body {
 	display: grid;
-	background-color: #FBFBFB;
+	background-color: var(--bg);
 	font-family: Helvetica;
+	color: var(--text);
 	grid-template-rows: auto auto;
+	
 }
 
-body * {
+header {
+	font-size: 300%;
+	font-weight: 100;
+	padding-top: 40vh; 
+	padding-bottom: 15vh;
 	margin: auto;
-	justify-self:  center;
+	justify-self: center;
 }
 
-a{color: --accent;}
+main {
+	max-width: 90%;
+	justify-self: center;
+}
+
+a {color: --text;}
 
 button {
 	box-sizing: border-box;
 	min-width: 140px; height: 45px;
 	margin-bottom: 2vh; 
 	font-size: 0.9em;
-	border-radius: 10px;
+	border-radius: 0px;
 	border: none;
-	background-color: var(--accent);
-	color: black;
+	background-color: var(--text);
+	color: white;
 	outline: none;
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 	font-weight: 500;
@@ -41,33 +64,20 @@ button.outlined {
 	border:solid;
 	border-width: 2px;
 	background-color: transparent;
-	color: var(--accent);
-	border-color: var(--accent);
+	color: var(--text);
+	border-color: var(--text);
 	outline: none;
 	box-shadow: none;
 }
 
 button.outlined.red {color: #E57373; border-color: #E57373;}
 
-button:hover {
-	box-shadow: 0 3px 12px rgba(128,172,255,0.5);
-}
-
-
 button.outlined:hover {
-	color: black;
-	background-color: var(--accent);
+	color: var(--text-inv);
+	background-color: var(--text);
 }
 
 button.outlined.red:hover {
 	color: black;
 	background-color: #E57373;
-}
-
-main {
-	padding-top: 40vh; 
-	padding-bottom: 15vh;
-	font-weight: 700;
-	font-size: 300%;
-	max-width: 90%;
 }
