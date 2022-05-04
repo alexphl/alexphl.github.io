@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+:root {
+	  --accent-blue: #5293C3;
+	}
+
+
 @media (prefers-color-scheme: dark) {
 	:root {
 	  --text: white;
@@ -19,19 +24,28 @@
 body {
 	display: grid;
 	background-color: var(--bg);
-	font-family: Helvetica;
+	font-family: monospace;
 	color: var(--text);
 	grid-template-rows: auto auto;
-	
+	height: 100vh;
+	max-width: 80%;
+	margin: auto;
 }
 
 header {
+	padding-bottom: 5vh;
+	justify-self: center;
+	margin: auto;
+}
+
+header h3 {
 	font-size: 300%;
 	font-weight: 100;
-	padding-top: 40vh; 
-	padding-bottom: 15vh;
-	margin: auto;
-	justify-self: center;
+}
+
+header h5 {
+	font-size: 150%;
+	font-weight: 400;
 }
 
 main {
@@ -39,7 +53,9 @@ main {
 	justify-self: center;
 }
 
-a {color: --text;}
+a {
+	color: var(--accent-blue)
+}
 
 button {
 	box-sizing: border-box;
