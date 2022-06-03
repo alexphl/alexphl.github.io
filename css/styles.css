@@ -2,13 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-:root {
-	  --accent-blue: #5293C3;
-	}
-
-
 @media (prefers-color-scheme: dark) {
 	:root {
+	  --accent-blue: #4BAAEB;
 	  --text: white;
 	  --text-inv: black;
 	  --bg: #191B1A;
@@ -17,6 +13,7 @@
 
 @media (prefers-color-scheme: light) {
 	:root {
+	  --accent-blue: #0079CD;
 	  --text: black;
 	  --text-inv: white;
 	  --bg: white;
@@ -49,7 +46,7 @@ header h3 {
 }
 
 header h5 {
-	font-size: 150%;
+	font-size: 125%;
 	font-weight: 400;
 }
 
@@ -64,11 +61,11 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	padding: 5px;
+header a:hover {
+	padding: 8px;
+	border-radius: 6px;
 	background-color: rgba(150,150,200,0.15);
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-	border-radius: 5px;
 }
 
 button {
@@ -76,18 +73,17 @@ button {
 	min-width: 140px; height: 45px;
 	margin-bottom: 2vh; 
 	font-size: 0.9em;
-	border-radius: 5px;
+	border-radius: 8px;
 	border: none;
 	background-color: var(--text);
 	color: white;
 	outline: none;
-	transition: all 0.1s cubic-bezier(.25,.8,.25,1);
+	transition: all 0.2s cubic-bezier(.25,.8,.25,1);
 	font-weight: 500;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12);
 	line-height: 100%;
 	padding-left: 15px;
 	padding-right: 15px;
-	vertical-align: middle;
 }
 
 button.outlined {
