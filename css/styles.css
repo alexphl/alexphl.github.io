@@ -20,17 +20,18 @@
 body {
 	display: grid;
 	grid-template-rows: auto;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto 80% auto;
 	color: var(--text);
 	background-color: var(--bg);
 	font-family: Poppins;
 	height: 100vh;
-	max-width: 80%;
 	margin: auto;
 	align-content: center;
-	position: static;
-	overflow-x: hidden;
-	overflow-anchor: none;
+}
+
+html, body {
+	position:relative;
+	overflow-x:hidden;
 }
 
 main {
