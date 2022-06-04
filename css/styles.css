@@ -61,6 +61,7 @@ header h5 {
 	font-size: 115%;
 	font-weight: 400;
 	width: fit-content;
+	max-width: 80%;
 }
 
 a {
@@ -118,6 +119,7 @@ button.flat:hover {
 	border: dashed;
 	border-color: rgba(150,150,150,0.25);
 	#box-shadow: 10px 10px 0px rgba(80,255,80,0.15);
+	z-index: -1;
 }
 
 .bgElement:hover, .bgElement:active {
