@@ -106,7 +106,15 @@ button.flat:hover {
 	height: 500px;
 	max-height: 78vh;
 	background-color: rgba(80,80,200,0.05);
+	transition: all 10s cubic-bezier(.25,.8,.25,1);
 	overflow: hidden;
 	border: dashed;
 	border-color: rgba(150,150,150,0.25);
+}
+
+.bgElement:hover {
+	width: 280px;
+	border: dotted;
+	border-color: rgba(210,80,80,0.5);
+	background-color: rgba(255,0,0,0.02);
 }
