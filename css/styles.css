@@ -95,3 +95,17 @@ button.flat:hover {
 	border-color: rgba(255,255,255,0.4);
 	margin-left: 10px;
 }
+
+.bgElement {
+	margin-top: 12vh;
+	margin-left: 55vw;
+	position: absolute;
+	max-width: 35vw;
+	width: 300px;
+	height: 500px;
+	max-height: 78vh;
+	background-color: rgba(80,80,200,0.05);
+	overflow: hidden;
+	border: dashed;
+	border-color: rgba(150,150,150,0.25);
+}
