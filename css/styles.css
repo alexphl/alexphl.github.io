@@ -90,7 +90,7 @@ button {
 button.outlined {
 	border: solid;
 	border-color: rgba(255,255,255,0.25);
-	border-width: 1px;
+	border-width: 1.5px;
 	background-color: black;
 	color: white;
 	outline: none;
