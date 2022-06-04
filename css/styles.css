@@ -1,12 +1,10 @@
 @charset "UTF-8";
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 @media (prefers-color-scheme: dark) {
 	:root {
 	  --accent-blue: #4AB6FF;
 	  --text: white;
-	  --text-inv: black;
 	  --bg: #191B1A;
 	}
 }
@@ -15,7 +13,6 @@
 	:root {
 	  --accent-blue: #0079CD;
 	  --text: black;
-	  --text-inv: white;
 	  --bg: white;
 	}
 }
@@ -24,14 +21,18 @@ body {
 	display: grid;
 	grid-template-rows: auto;
 	grid-template-columns: auto auto auto;
+	color: var(--text);
 	background-color: var(--bg);
 	font-family: Poppins;
-	color: var(--text);
 	height: 100vh;
-	max-height: 100%;
 	max-width: 80%;
 	margin: auto;
-	align-content: center
+	align-content: center;
+}
+
+main {
+	grid-column: 2;
+	opacity: 0.9;
 }
 
 header {
@@ -49,15 +50,9 @@ header h3 {
 }
 
 header h5 {
-	line-height: 120%;
+	line-height: 125%;
 	font-size: 125%;
 	font-weight: 400;
-}
-
-main {
-	max-width: 90%;
-	grid-column: 2;
-	opacity: 0.9;
 }
 
 a {
@@ -71,43 +66,32 @@ header a:hover {
 	padding: 8px;
 	border-radius: 6px;
 	background-color: rgba(100,150,250,0.15);
-	transition: all 0.3s cubic-bezier(.25,.8,.25,1.2);
 }
 
 button {
-	min-width: 140px; height: 50px;
-	margin-bottom: 2vh; 
+	height: 50px;
+	min-width: 140px;
+	font-weight: 500;
 	font-size: 0.9em;
 	border-radius: 6px;
 	border: none;
-	background-color: var(--text);
+	background-color: black;
 	color: white;
 	outline: none;
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1.3);
-	font-weight: 500;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12);
 	line-height: 100%;
 	padding-left: 15px;
 	padding-right: 15px;
 }
 
-button.outlined {
+button.flat {
 	border: solid;
 	border-color: rgba(255,255,255,0.25);
 	border-width: 1.5px;
-	background-color: black;
-	color: white;
-	outline: none;
 }
 
-button.outlined.red {color: #E57373; border-color: #E57373;}
-
-button.outlined:hover {
+button.flat:hover {
 	border-color: rgba(255,255,255,0.4);
 	margin-left: 10px;
-}
-
-button.outlined.red:hover {
-	color: black;
-	background-color: #E57373;
 }
