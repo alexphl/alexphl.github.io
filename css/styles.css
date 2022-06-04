@@ -88,10 +88,9 @@ button {
 }
 
 button.outlined {
-	border:solid;
 	border-width: 2px;
-	background-color: transparent;
-	color: var(--text);
+	background-color: black;
+	color: white;
 	border-color: var(--text);
 	outline: none;
 	box-shadow: none;
@@ -100,8 +99,6 @@ button.outlined {
 button.outlined.red {color: #E57373; border-color: #E57373;}
 
 button.outlined:hover {
-	color: var(--text-inv);
-	background-color: var(--text);
 	margin-left: 10px;
 }
 
