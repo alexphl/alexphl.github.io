@@ -28,7 +28,9 @@ body {
 	max-width: 80%;
 	margin: auto;
 	align-content: center;
-	overflow: hidden;
+	position: static;
+	overflow-x: hidden;
+	overflow-anchor: none;
 }
 
 main {
@@ -94,7 +96,7 @@ button.flat {
 
 button.flat:hover {
 	border-color: rgba(255,255,255,0.4);
-	margin-left: 10px;
+	margin-left: 6px;
 }
 
 .bgElement {
@@ -105,14 +107,14 @@ button.flat:hover {
 	height: 500px;
 	max-height: 78vh;
 	background-color: rgba(80,80,200,0.05);
-	transition: all 10s cubic-bezier(.25,.8,.25,1);
+	transition: all 8s cubic-bezier(.25,.8,.25,1), margin 10s cubic-bezier(.25,.8,.25,1);
 	border: dashed;
 	border-color: rgba(150,150,150,0.25);
 }
 
 .bgElement:hover, .bgElement:active {
 	margin-top: 10vh;
-	margin-left: 60vw;
+	margin-left: 58vw;
 	width: 280px;
 	border: dotted;
 	border-color: rgba(210,80,80,0.5);
