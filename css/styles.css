@@ -22,21 +22,21 @@
 
 body {
 	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto auto auto;
 	background-color: var(--bg);
 	font-family: Poppins;
 	color: var(--text);
-	grid-template-rows: auto auto;
 	height: 100vh;
 	max-height: 100%;
 	max-width: 80%;
 	margin: auto;
+	align-content: center
 }
 
 header {
-	font-weight: 700;
-	padding-bottom: 4vh;
-	justify-self: center;
-	margin: auto;
+	grid-column: 2;
+	padding-bottom: 50px;
 }
 
 header h3 {
@@ -52,7 +52,7 @@ header h5 {
 
 main {
 	max-width: 90%;
-	justify-self: center;
+	grid-column: 2;
 }
 
 a {
@@ -73,7 +73,7 @@ button {
 	min-width: 140px; height: 45px;
 	margin-bottom: 2vh; 
 	font-size: 0.9em;
-	border-radius: 8px;
+	border-radius: 6px;
 	border: none;
 	background-color: var(--text);
 	color: white;
