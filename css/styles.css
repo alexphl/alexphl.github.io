@@ -29,6 +29,14 @@ body {
 	align-content: center;
 }
 
+/* Safari hack */
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* The hack for Safari */
+    height: -webkit-fill-available;
+  }
+}
+
 html, body {
 	position:relative;
 	overflow-x:hidden;
@@ -67,6 +75,8 @@ a {
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1.4);
 	text-decoration: none;
 	white-space: nowrap;
+	position: relative;
+	z-index: 5;
 }
 
 header a:hover {
@@ -117,7 +127,6 @@ button.flat:hover {
 	border: dashed;
 	border-color: rgba(150,150,150,0.25);
 	#box-shadow: 10px 10px 0px rgba(80,255,80,0.15);
-	z-index: -1;
 }
 
 .bgElement:hover, .bgElement:active {
