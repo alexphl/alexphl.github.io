@@ -102,6 +102,7 @@ button.outlined.red {color: #E57373; border-color: #E57373;}
 button.outlined:hover {
 	color: var(--text-inv);
 	background-color: var(--text);
+	margin-left: 10px;
 }
 
 button.outlined.red:hover {
