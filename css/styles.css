@@ -101,7 +101,6 @@ button.flat:hover {
 	margin-top: 12vh;
 	margin-left: 55vw;
 	position: absolute;
-	max-width: 35vw;
 	width: 300px;
 	height: 500px;
 	max-height: 78vh;
@@ -112,7 +111,9 @@ button.flat:hover {
 	border-color: rgba(150,150,150,0.25);
 }
 
-.bgElement:hover {
+.bgElement:hover, .bgElement:active {
+	margin-top: 10vh;
+	margin-left: 60vw;
 	width: 280px;
 	border: dotted;
 	border-color: rgba(210,80,80,0.5);
