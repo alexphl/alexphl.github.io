@@ -53,6 +53,7 @@ header h5 {
 main {
 	max-width: 90%;
 	grid-column: 2;
+	opacity: 0.9;
 }
 
 a {
