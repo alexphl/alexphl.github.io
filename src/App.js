@@ -13,7 +13,9 @@ function App() {
       </header>
         
       <main>
-        <ButtonFlat text='Back to my Git' href='https://www.github.com/alexphl'/>
+        <a href='https://www.github.com/alexphl'>
+          <ButtonFlat text='Back to my Git'/>
+        </a>
       </main>
 
       <div class="bgElement"></div>

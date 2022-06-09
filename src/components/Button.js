@@ -1,18 +1,24 @@
 import './button.css';
 
-const Button = ({ text, href }) => {
+const Button = ({ text, onClick }) => {
 	return (
-		<a href={href}>
-			<button className='button'>{text}</button>
-		</a>
+		<button 
+			className = 'button'
+			onClick = {onClick}
+		>
+			{text}
+		</button>
 	)
 }
 
-const ButtonFlat = ({ text, href }) => {
+const ButtonFlat = ({ text, onClick }) => {
 	return (
-		<a href={href}>
-			<button className='button flat'>{text}</button>
-		</a>
+		<button 
+			className = 'button flat'
+			onClick = {onClick}
+		>
+			{text}
+		</button>
 	)
 }
 
