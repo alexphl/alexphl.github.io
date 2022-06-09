@@ -1,3 +1,5 @@
+import Button from './components/Button'
+
 function App() {
   return (
     <>
@@ -11,7 +13,7 @@ function App() {
       </header>
         
       <main>
-        <a href="https://www.github.com/alexphl"><button class="button flat">Back to my Git</button></a>
+        <Button text='Back to my Git' href='https://www.github.com/alexphl'/>
       </main>
 
       <div class="bgElement"></div>
