@@ -34,7 +34,7 @@ body {
 
 /* Safari hack */
 @supports (-webkit-touch-callout: none) {
-  body {
+  #root {
     /* The hack for Safari */
     height: -webkit-fill-available;
   }
