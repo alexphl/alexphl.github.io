@@ -8,7 +8,7 @@ function App() {
         <h3> Hi there. </h3>
         <h5> 
           <p> Glad you found me. This is my portfolio and a React pet project. I'm likely working on it as you're reading this.</p>
-          <p> Big things are planned, you can check out <a href="https://web.cs.dal.ca/~olexiy/jobportal">the source code</a> in the meantime. </p>
+          <p> Big things are planned, you can check out <a href="https://github.com/alexphl/alexphl.github.io">the source code</a> in the meantime. </p>
         </h5> 
         
       </header>
@@ -28,8 +28,8 @@ function App() {
       
       <footer>
         <div id='footerLinks'>
-          <AiFillLinkedin /> 
-          <AiFillGithub />
+          <a href="https://www.linkedin.com/in/alex-prokhvatylo-ba0471236/"><AiFillLinkedin/></a>
+          <a href="https://github.com/alexphl/"><AiFillGithub /></a>
         </div>
       </footer>
     </>
