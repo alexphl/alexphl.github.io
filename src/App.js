@@ -1,4 +1,3 @@
-import { ButtonFlat } from './components/Button'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { FiGithub } from 'react-icons/fi';
 import { HiOutlineExternalLink } from 'react-icons/hi';
