@@ -31,7 +31,7 @@ function App() {
         </div>
 
         <div className='project'>
-          <h3>Simplifying IT - Job portal website</h3>
+          <h3>Job Portal web app</h3>
           <p>JS, PHP, MySQL</p>
           <a href="https://github.com/alexphl/csci3130-t7-online-barter-trading"><FiGithub className='icon'/></a>
         </div>

@@ -7,6 +7,7 @@
     --text: white;
     --bg: #191B1A;
     --bg-translucent: rgba(255,140,0,0.08);
+    --bg-footer: rgba(0,0,0,0.5);
   }
 }
 
@@ -16,6 +17,7 @@
     --text: black;
     --bg: white;
     --bg-translucent: rgba(100,40,0,0.2);
+    --bg-footer: rgba(255,255,255,0.5);
   }
 }
 
@@ -102,15 +104,14 @@ div.project .icon {
 }
 
 div.project a {
-  margin-left: 25px;
   display: inline-block;
   height: fit-content;
   font-size: 1.5em;
   justify-self: end;
   align-self: end;
   grid-row: 1 / span 2;
-  margin: none;
-  color: white;
+  margin: 0px 0px 0px 25px;
+  color: var(--text);
 }
 
 div.project .icon:hover {
@@ -210,11 +211,11 @@ footer {
 
 #footerLinks {
   grid-column: 2;
-  color:  var(--bg);
+  color: var(--text);
   height: 1.9em;
   width: 5em;
   font-size: 1.55em; 
-  background-color: rgba(0,0,0,0.5);
+  background-color: var(--bg-footer);
   backdrop-filter: blur(20px) saturate(500%);
   border-radius: 0.2em;
   display: flex;
@@ -226,7 +227,7 @@ footer {
 }
 
 #footerLinks a {
-  color: white;
+  color: var(--text);
 }
 
 #footerLinks:hover {
@@ -238,5 +239,6 @@ footer {
 }
 
 #footerLinks *:hover{
+  color: white;
   opacity: 1;
 }
