@@ -1,5 +1,7 @@
 import { ButtonFlat } from './components/Button'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { FiGithub } from 'react-icons/fi';
+import { HiOutlineExternalLink } from 'react-icons/hi';
 
 function App() {
   return (
@@ -21,7 +23,19 @@ function App() {
 
       <div id="projects">
         <h2>My other projects</h2>
-        <p>  </p>
+        <div className='project'>
+          <h3>Barter - Android App</h3>
+          <p>Java, Firebase</p>
+          <a href="https://web.cs.dal.ca/~olexiy/jobportal/"><HiOutlineExternalLink className='icon'/></a>
+          <a href="https://github.com/alexphl/jobportal_IA"><FiGithub className='icon'/></a>
+        </div>
+
+        <div className='project'>
+          <h3>Simplifying IT - Job portal website</h3>
+          <p>JS, PHP, MySQL</p>
+          <a href="https://github.com/alexphl/csci3130-t7-online-barter-trading"><FiGithub className='icon'/></a>
+        </div>
+        
       </div>
 
       <div class="bgElement"></div>
