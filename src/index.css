@@ -117,7 +117,7 @@ div.project a {
   justify-self: end;
   align-self: end;
   grid-row: 1 / span 2;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 0px 0px 15px;
   color: var(--text);
 }
 
@@ -153,7 +153,7 @@ header h3 {
 
 header h5 {
   max-width: 500px;
-  line-height: 150%;
+  line-height: 175%;
   font-size: 1.1em;
   font-weight: 400;
 }
@@ -211,10 +211,10 @@ footer {
   position: fixed;
   bottom: 0;
   display: grid;
-  grid-template-columns: auto 80% auto;
+  grid-template-columns: auto auto auto;
   width: 100%;
   justify-items: center;
-  z-index: 99;
+  z-index: 70;
 }
 
 #footerLinks {
@@ -230,7 +230,6 @@ footer {
   justify-content: space-evenly;
   align-items: flex-end;
   margin-bottom: 3vh;
-  margin-top: 3vh;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1.3);
 }
 

@@ -25,14 +25,14 @@ function App() {
         <div className='project'>
           <h3>Barter - Android App</h3>
           <p>Java, Firebase</p>
-          <a href="https://web.cs.dal.ca/~olexiy/jobportal/"><HiOutlineExternalLink className='icon'/></a>
-          <a href="https://github.com/alexphl/jobportal_IA"><FiGithub className='icon'/></a>
+          <a href="https://github.com/alexphl/csci3130-t7-online-barter-trading"><FiGithub className='icon'/></a>
         </div>
 
         <div className='project'>
           <h3>Job Portal web app</h3>
           <p>JS, PHP, MySQL</p>
-          <a href="https://github.com/alexphl/csci3130-t7-online-barter-trading"><FiGithub className='icon'/></a>
+          <a href="https://web.cs.dal.ca/~olexiy/jobportal/"><HiOutlineExternalLink className='icon'/></a>
+          <a href="https://github.com/alexphl/jobportal_IA"><FiGithub className='icon'/></a>
         </div>
         
       </div>
