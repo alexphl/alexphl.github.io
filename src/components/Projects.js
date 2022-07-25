@@ -12,7 +12,7 @@ const projectList = [
 	{
 		title: "Dalhousie Schedule Builder",
 		subHead: "Next.js, TypeScript",
-		git: "https://github.com/alexphl/alexphl.github.io",
+		git: "https://github.com/alexphl/dal_schedule_builder",
 		ext: null,
 		inProgress: true,
 	},
