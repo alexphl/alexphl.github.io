@@ -32,27 +32,25 @@ const projectList = [
 	},
 ];
 
-const Projects = (props) => {
-	return (
-		<div id="projects">
-			<h2>My Projects</h2>
+const Projects = (props?: any) => (
+	<div id="projects">
+		<h2>My Projects</h2>
 
-			{projectList.map((project) => (
-				<div className="project">
-					<h5>{project.title}</h5>
-					<p>{project.subHead}</p>
-					{project.ext && (
-						<a href={project.ext}>
-							<HiOutlineExternalLink className="icon" />
-						</a>
-					)}
-					<a href={project.git}>
-						<FiGithub className="icon" />
+		{projectList.map((project) => (
+			<div className="project">
+				<h5>{project.title}</h5>
+				<p>{project.subHead}</p>
+				{project.ext && (
+					<a href={project.ext}>
+						<HiOutlineExternalLink className="icon" />
 					</a>
-				</div>
-			))}
-		</div>
-	);
-};
+				)}
+				<a href={project.git}>
+					<FiGithub className="icon" />
+				</a>
+			</div>
+		))}
+	</div>
+);
 
 export default Projects;

@@ -1,12 +1,10 @@
 import "./button.css";
 
-const Button = ({ text, onClick }) => {
-	return (
-		<button className="button" onClick={onClick}>
-			{text}
-		</button>
-	);
-};
+const Button = ({ text, onClick }) => (
+    <button className="button" onClick={onClick}>
+        {text}
+    </button>
+);
 
 const ButtonFlat = ({ text, onClick }) => {
 	return (

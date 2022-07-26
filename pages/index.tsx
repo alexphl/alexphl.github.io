@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Projects from "./Projects";
 
