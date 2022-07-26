@@ -1,10 +1,12 @@
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import Image from 'next/image'
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import Projects from "./components/Projects";
-import Pdf from "./files/Resume.pdf";
+import Projects from "./Projects";
 
-function App() {
+const Home: NextPage = () => {
   return (
-    <>
+    <div>
       <header>
         <h3> Hi there. </h3>
         <h5>
@@ -20,7 +22,7 @@ function App() {
             {" "}
             This website is a work in progress, but you can check out my
             old-fashioned{" "}
-            <a href={Pdf} target="_blank" rel="noreferrer">
+            <a href='./Resume.pdf' target="_blank" rel="noreferrer">
               PDF resume
             </a>{" "}
             in the meantime.{" "}
@@ -30,7 +32,7 @@ function App() {
 
       <Projects />
 
-      <div class="bgElement"></div>
+      <div className="bgElement"></div>
 
       <footer>
         <div id="footerLinks">
@@ -42,8 +44,8 @@ function App() {
           </a>
         </div>
       </footer>
-    </>
-  );
+    </div>
+  )
 }
 
-export default App;
+export default Home
