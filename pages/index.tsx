@@ -11,11 +11,11 @@ const Home: NextPage = () => {
         <h5>
           <p>
             {" "}
-            I'm Alex, glad you found me. I am a 4th year BCS student at
+            I&apos;m Alex, glad you found me. I am a 4th year BCS student at
             Dalhousie. My primary skillset that of web and mobile development
-            but I’m a generalist at heart. My main career interests lay in
+            but I&apos;m a generalist at heart. My main career interests lay in
             full-stack web development, Cloud architecture and DevOps, though
-            I'm also passionate about mobile computing and UI/UX philosophies.
+            I&apos;m also passionate about mobile computing and UI/UX philosophies.
           </p>
           <p>
             {" "}
