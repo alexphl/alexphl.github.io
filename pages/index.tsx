@@ -1,5 +1,5 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import type { NextPage } from "next";
+import Head from "next/head";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Projects from "./Projects";
 
@@ -21,7 +21,11 @@ const Home: NextPage = () => {
             {" "}
             This website is a work in progress, but you can check out my
             old-fashioned{" "}
-            <a href='./Resume.pdf' target="_blank" rel="noreferrer">
+            <a
+              href="/files/Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               PDF resume
             </a>{" "}
             in the meantime.{" "}
@@ -44,7 +48,7 @@ const Home: NextPage = () => {
         </div>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
