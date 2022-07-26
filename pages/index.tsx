@@ -6,7 +6,7 @@ import Projects from "./Projects";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div id="root">
       <header>
         <h3> Hi there. </h3>
         <h5>
