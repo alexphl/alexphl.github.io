@@ -2,7 +2,7 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 import { FiGithub } from "react-icons/fi";
 
 const projectList = [
-	{
+	{	
 		title: "Personal website",
 		subHead: "ReactJS",
 		git: "https://github.com/alexphl/alexphl.github.io",
@@ -37,7 +37,7 @@ const Projects = (props?: any) => (
 		<h2>My Projects</h2>
 
 		{projectList.map((project) => (
-			<div className="project">
+			<div className="project" key={project.git}>
 				<h5>{project.title}</h5>
 				<p>{project.subHead}</p>
 				{project.ext && (
