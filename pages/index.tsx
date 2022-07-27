@@ -1,26 +1,31 @@
+import type { NextPage } from "next";
+import Head from "next/head";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import Projects from "./components/Projects";
-import Pdf from "./files/Resume.pdf";
+import Projects from "./Projects";
 
-function App() {
+const Home: NextPage = () => {
   return (
-    <>
+    <div id="root">
       <header>
         <h3> Hi there. </h3>
         <h5>
           <p>
             {" "}
-            I'm Alex, glad you found me. I am a 4th year BCS student at
+            I&apos;m Alex, glad you found me. I am a 4th year BCS student at
             Dalhousie. My primary skillset that of web and mobile development
-            but I’m a generalist at heart. My main career interests lay in
+            but I&apos;m a generalist at heart. My main career interests lay in
             full-stack web development, Cloud architecture and DevOps, though
-            I'm also passionate about mobile computing and UI/UX philosophies.
+            I&apos;m also passionate about mobile computing and UI/UX philosophies.
           </p>
           <p>
             {" "}
             This website is a work in progress, but you can check out my
             old-fashioned{" "}
-            <a href={Pdf} target="_blank" rel="noreferrer">
+            <a
+              href="/files/Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               PDF resume
             </a>{" "}
             in the meantime.{" "}
@@ -30,7 +35,7 @@ function App() {
 
       <Projects />
 
-      <div class="bgElement"></div>
+      <div className="bgElement"></div>
 
       <footer>
         <div id="footerLinks">
@@ -42,8 +47,8 @@ function App() {
           </a>
         </div>
       </footer>
-    </>
+    </div>
   );
-}
+};
 
-export default App;
+export default Home;
