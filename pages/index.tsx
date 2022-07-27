@@ -1,11 +1,13 @@
 import type { NextPage } from "next";
-import Head from "next/head";
+import Heads from "./Head";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Projects from "./Projects";
 
 const Home: NextPage = () => {
   return (
     <div id="root">
+      <Heads />
+
       <header>
         <h3> Hi there. </h3>
         <h5>
@@ -15,7 +17,8 @@ const Home: NextPage = () => {
             Dalhousie. My primary skillset that of web and mobile development
             but I&apos;m a generalist at heart. My main career interests lay in
             full-stack web development, Cloud architecture and DevOps, though
-            I&apos;m also passionate about mobile computing and UI/UX philosophies.
+            I&apos;m also passionate about mobile computing and UI/UX
+            philosophies.
           </p>
           <p>
             {" "}
