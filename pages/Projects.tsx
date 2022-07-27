@@ -4,7 +4,7 @@ import { FiGithub } from "react-icons/fi";
 const projectList = [
 	{	
 		title: "Personal website",
-		subHead: "ReactJS",
+		subHead: "ReactJS, TypeScript",
 		git: "https://github.com/alexphl/alexphl.github.io",
 		ext: null,
 		inProgress: true,
@@ -45,7 +45,7 @@ const Projects = (props?: any) => (
 						<HiOutlineExternalLink className="icon" />
 					</a>
 				)}
-				<a href={project.git}>
+				<a href={project.git} rel="prefetch">
 					<FiGithub className="icon" />
 				</a>
 			</div>

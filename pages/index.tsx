@@ -3,6 +3,10 @@ import Heads from "./Head";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Projects from "./Projects";
 
+export const config = {
+  unstable_runtimeJS: false
+}
+
 const Home: NextPage = () => {
   return (
     <div id="root">
