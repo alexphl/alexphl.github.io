@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Heads from "./Head";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Projects from "./Projects";
 
@@ -10,8 +9,6 @@ export const config = {
 const Home: NextPage = () => {
   return (
     <div id="root">
-      <Heads />
-
       <header>
         <h3> Hi there. </h3>
         <h5>
