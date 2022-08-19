@@ -4,8 +4,7 @@
   "homepage": "https://alexphl.github.io",
   "private": true,
   "scripts": {
-    "predeploy": "npm run build",
-    "static": "next build && next export && touch ./out/.nojekyll && echo 'www.mywebsite.com' > ./out/CNAME",
+    "static": "next build && next export && touch ./out/.nojekyll && echo 'www.alexphl.github.io' > ./out/CNAME",
     "deploy": "gh-pages -d out -t true",
     "dev": "next dev",
     "build": "next build",
