@@ -28,7 +28,7 @@ const projectList = [
 		height: null,
 	},
 	{
-		title: "Personal website",
+		title: "Personal website (this one)",
 		subHead: "ReactJS, TypeScript",
 		image: null,
 		git: "https://github.com/alexphl/alexphl.github.io",
