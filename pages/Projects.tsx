@@ -22,18 +22,14 @@ const projectList = [
 	{
 		title: "Dalhousie Schedule Builder",
 		subHead: "Next.js, TypeScript",
-		image: null,
 		git: "https://github.com/alexphl/dal_schedule_builder",
 		ext: null,
-		height: null,
 	},
 	{
 		title: "Personal website (this one)",
 		subHead: "ReactJS, TypeScript",
-		image: null,
 		git: "https://github.com/alexphl/alexphl.github.io",
 		ext: null,
-		height: null,
 	},
 ];
 
@@ -46,11 +42,11 @@ const Projects = (props?: any) => (
 				className="project"
 				key={project.git}
 				style={{
-					backgroundImage: `url(${project.image})`,
-					height: `${project.height}`,
+					backgroundImage: project.image && `url(${project.image})` || 'none',
+					height: project.height || 'auto',
 				}}
 			>
-				<div id="details">
+				<div className="projectDetails">
 					<h5>{project.title}</h5>
 					<p>{project.subHead}</p>
 					{project.ext && (

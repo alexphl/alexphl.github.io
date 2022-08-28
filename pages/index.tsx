@@ -11,37 +11,31 @@ const Home: NextPage = () => {
     <div id="root">
       <header>
         <h3> Hi there. </h3>
-        <h5>
-          <p id="intro"> I&apos;m Alex, glad you found me.</p>
-          <p>
-            I am a 4th year BCS student at Dalhousie U. My primary skillset that
-            full-stack web and mobile development but I&apos;m a generalist at
-            heart.{" "}
-          </p>
-          <p>
-            My main career interests are in web development, cloud architectures
-            and DevOps, though I also like to dabble in mobile computing and
-            exploring UI/UX philosophies.
-          </p>
-          <p>
-            {" "}
-            This website is a work in progress and has a long journey ahead of
-            it. In the meantime, you can check out my old-fashioned{" "}
-            <a
-              href="/files/Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              PDF resume
-            </a>
-            .{" "}
-          </p>
-          <p>
-            As with most of my personal projects, no templates or ready-made UI
-            components were used here. For what it&apos;s worth, all designs are
-            my own.
-          </p>
-        </h5>
+        <h5> I&apos;m Alex, glad you found me.</h5>
+        <p>
+          I am a 4th year BCS student at Dalhousie U. My primary skillset that
+          full-stack web and mobile development but I&apos;m a generalist at
+          heart.{" "}
+        </p>
+        <p>
+          My main career interests are in web development, cloud architectures
+          and DevOps, though I also like to dabble in mobile computing and
+          exploring UI/UX philosophies.
+        </p>
+        <p>
+          {" "}
+          This website is a work in progress and has a long journey ahead of it.
+          In the meantime, you can check out my old-fashioned{" "}
+          <a href="/files/Resume.pdf" target="_blank" rel="noopener noreferrer">
+            PDF resume
+          </a>
+          .{" "}
+        </p>
+        <p>
+          As with most of my personal projects, no templates or ready-made UI
+          components were used here. For what it&apos;s worth, all designs are
+          my own.
+        </p>
       </header>
 
       <Projects />
