@@ -114,6 +114,17 @@ div.project:hover {
   transition: all 0.2s cubic-bezier(.25,.8,.25,1);
 }
 
+div.project .label {
+  padding: 4px 8px 3px 8px;
+  border-radius: 8px;
+  font-size: 0.75em;
+  font-weight: 600;
+  background-color: var(--bg-footer);
+  margin:  20px;
+  justify-self: end;
+  grid-row: 1;
+}
+
 div.project h5 {
   font-weight: 600;
   font-size: 0.95em;
