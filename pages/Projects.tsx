@@ -1,38 +1,32 @@
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { FiGithub } from "react-icons/fi";
-import Image from "next/image";
 
 const projectList = [
 	{
-		title: "Data visualizations for EQWorks",
+		title: "Data Visualizations for EQWorks",
 		subHead: "Next.js, tRPC, Prisma",
-		image: "/files/project_bg/EQWorks.png",
+		image: "/files/project_bg/eqworks.png",
 		git: "https://github.com/alexphl/eqw-appdev-sol",
 		ext: "https://eqw-appdev-sol.vercel.app",
-		height: "180px",
 		label: "In Progress",
 	},
 	{
-		title: "Job Portal web app",
+		title: "Job Portal Web App",
 		subHead: "JS, PHP, MySQL",
 		image: "/files/project_bg/bg_jobportal.png",
 		git: "https://github.com/alexphl/jobportal_IA",
 		ext: "https://web.cs.dal.ca/~olexiy/jobportal/",
-		height: "180px",
 	},
 	{
 		title: "Barter - Android App",
 		subHead: "Java, Firebase",
 		image: "/files/project_bg/barter.png",
 		git: "https://github.com/alexphl/csci3130-t7-online-barter-trading",
-		ext: null,
-		height: "180px",
 	},
 	{
-		title: "Personal website (this one)",
+		title: "Personal Website (this one)",
 		subHead: "ReactJS, TypeScript",
 		git: "https://github.com/alexphl/alexphl.github.io",
-		ext: null,
 	},
 ];
 
@@ -47,7 +41,7 @@ const Projects = (props?: any) => (
 				style={{
 					backgroundImage:
 						(project.image && `url(${project.image})`) || "none",
-					height: project.height || "auto",
+					height: project.image && "180px" || "auto",
 				}}
 			>
 				{project.label && <div className="label" key={project.git}>
