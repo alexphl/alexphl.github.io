@@ -1,10 +1,10 @@
 {
   "name": "alexphl.github.io",
   "version": "0.1.0",
-  "homepage": "https://alexphl.github.io",
+  "homepage": "https://alexprokh.dev",
   "private": true,
   "scripts": {
-    "static": "next build && next export && touch ./out/.nojekyll && echo 'www.alexphl.github.io' > ./out/CNAME",
+    "static": "next build && next export && touch ./out/.nojekyll && echo 'alexprokh.dev' > ./out/CNAME",
     "deploy": "gh-pages -d out -t true",
     "dev": "next dev",
     "build": "next build",

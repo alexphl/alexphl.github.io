@@ -5,7 +5,7 @@ const projectList = [
 	{
 		title: "Data Visualizations for EQWorks",
 		subHead: "Next.js, tRPC, Prisma",
-		image: "/files/project_bg/eqworks.png",
+		image: "/files/project_bg/eqworks.webp",
 		git: "https://github.com/alexphl/eqw-appdev-sol",
 		ext: "https://eqw-appdev-sol.vercel.app",
 		label: "In Progress",
@@ -13,14 +13,14 @@ const projectList = [
 	{
 		title: "Job Portal Web App",
 		subHead: "JS, PHP, MySQL",
-		image: "/files/project_bg/bg_jobportal.png",
+		image: "/files/project_bg/bg_jobportal.webp",
 		git: "https://github.com/alexphl/jobportal_IA",
 		ext: "https://web.cs.dal.ca/~olexiy/jobportal/",
 	},
 	{
 		title: "Barter - Android App",
 		subHead: "Java, Firebase",
-		image: "/files/project_bg/barter.png",
+		image: "/files/project_bg/barter.webp",
 		git: "https://github.com/alexphl/csci3130-t7-online-barter-trading",
 	},
 	{
