@@ -41,12 +41,14 @@ const Projects = (props?: any) => (
 				style={{
 					backgroundImage:
 						(project.image && `url(${project.image})`) || "none",
-					height: project.image && "180px" || "auto",
+					height: (project.image && "180px") || "auto",
 				}}
 			>
-				{project.label && <div className="label" key={project.git}>
-									{project.label}
-								</div>}
+				{project.label && (
+					<div className="label" key={project.git}>
+						{project.label}
+					</div>
+				)}
 				<div className="projectDetails">
 					<h5>{project.title}</h5>
 					<p>{project.subHead}</p>
