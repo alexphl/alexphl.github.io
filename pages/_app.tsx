@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 			{/* Shoutout ped.ro for the filter idea */}
 			<svg id="texture">
 				<filter id="noise">
-					<feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3" stitchTiles="stitch" />
+					<feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="4" stitchTiles="stitch" />
 					<feColorMatrix type="saturate" values="0" />
 				</filter>
 

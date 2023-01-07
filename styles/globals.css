@@ -4,13 +4,13 @@
 	:root {
 		--accent-blue: #4ab6ff;
 		--text: white;
-		--bg: #151515;
+		--bg: #101010;
 		--bg-translucent: rgba(0, 200, 255, 0.1);
 		--bg-footer: rgba(0, 0, 0, 0.5);
 		--project-bg: rgba(0, 0, 0, 0);
 		--project-shadowIn: rgba(0, 12, 15, 1);
 		--project-shadow: rgba(0, 15, 20, 0.5);
-		--texture-opacity: 0.12;
+		--texture-opacity: 0.16;
 	}
 }
 
