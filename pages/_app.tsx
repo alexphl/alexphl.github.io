@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 export const config = {
 	unstable_runtimeJS: false,
@@ -22,11 +23,13 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 			<Component {...pageProps} />
 
-			{/* Shoutout ped.ro for the filter idea*/}
+			{/* Shoutout ped.ro for the filter idea */}
 			<svg id="texture">
 				<filter id="noise">
-					<feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="4" stitchTiles="stitch" />
+					<feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3" stitchTiles="stitch" />
+					<feColorMatrix type="saturate" values="0" />
 				</filter>
+
 				<rect width="100%" height="100%" filter="url(#noise)" />
 			</svg>
 		</>
