@@ -1,7 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { ParallaxProvider } from "react-scroll-parallax";
 
 export const config = {
 	unstable_runtimeJS: false,
